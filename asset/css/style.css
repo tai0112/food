@@ -1,0 +1,268 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: inherit;
+}
+
+:root{
+    --font-size-min:1.5rem;
+    --font-size-large:2.4rem;
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: 'Karma', serif;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.header-navbar{
+    display: flex;
+    font-size: 2.4rem;
+    justify-content: space-between;
+}
+
+.header__navbar-item{
+    padding: 21px 15px;
+    cursor: pointer;
+}
+
+.header-navbar__icon:hover{
+    background-color: #ccc;
+}
+
+.slider{
+    margin-top: 125px;
+}
+
+.slider-wide{
+    padding: 0 30px;
+}
+
+.slider-menu{
+
+}
+
+.slider-menu__heading{
+    margin: 10px 0;
+    line-height: 1.5;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.slider-menu__about{
+    font-size: var(--font-size-min);
+    text-align: center;
+    padding-bottom: 37px;
+    line-height: 1.6;
+}
+
+
+
+.slider-menu__img{
+    padding-top: 150%;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-menu__about--drop{
+    display: block;
+    margin-top: 15px;
+}
+
+.slider-pagnination{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.slider-pagnination__list{
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.slider-pagnination__item{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 13px 16px;
+    font-size: var(--font-size-min);
+}
+
+.slider-pagnination__icon{
+    
+}
+
+.slider-pagnination__link{
+    color: #000;
+    text-decoration: none;
+}
+
+.slider-pagnination__item--current,
+.slider-pagnination__item:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+.about__img{
+    width: 800px;
+    /* Để max-width là 100% giúp lúc ta sử dụng responsive nó sẽ vừa vặn với kích thước của màn hình và sẽ gạch đi phần set cứng ở trên */
+    max-width: 100%;
+    padding-top: 66.625%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.about{
+    padding-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__heading{
+    padding-bottom: 16px;
+    font-size: var(--font-size-large);
+    font-weight: 400;
+}
+
+.about-me{
+    padding-top: 16px;
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.about-me__heading{
+    font-size: 2rem;
+}
+
+.about-me__slogan{
+    font-size: var(--font-size-min);
+    font-style: italic;
+}
+
+.about-me__paragraph{
+    line-height: 1.5;
+    word-spacing: 0.01rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer{
+    max-width: 100%;
+    padding: 0 22px;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 50px;
+}
+
+.footer-content{
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.footer-container-about{
+
+}
+
+.footer-container__heading{
+    font-size: var(--font-size-large);
+    font-weight: 500;
+}
+
+.footer-container__paragraph{
+    font-size: var(--font-size-min);
+    line-height: 1.5;
+}
+
+.footer-container__copyright,
+.footer-container__copyright a{
+    color: #000;
+    font-size: var(--font-size-min);
+}
+
+.footer-container__copyright{
+    display: block;
+    margin-top: 20px;
+}
+
+.footer-container-post{
+    
+}
+
+.footer-container-post__list{
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-container-post__item{
+    padding: 10px 16px 18px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container-post__item:hover{
+    background-color: #ccc;
+}
+
+.footer-container-post__item:first-child{
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-container-post__img{
+    width: 50px;
+}
+
+.footer-container-post__text{
+    padding-left: 15px;
+}
+
+.footer-container-post__heading{
+    display: block;
+}
+
+.footer-container-post__heading{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.footer-container-post__paragraph{
+
+    font-size: var(--font-size-min);
+}
+
+
+.footer-container-tags__list{
+}
+
+.footer-container-tags__item{
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #616161;
+    padding: 2px 10px;
+}
+
+.footer-container-tags__item--current{
+    font-size: var(--font-size-min);
+    padding: 3px 5px;
+}
