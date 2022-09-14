@@ -20,14 +20,23 @@
         <div class="header">
             <div class="grid wide">
                 <div class="header-navbar">
-                    <i class="header__navbar-item header-navbar__icon fa-solid fa-bars"></i>
+                    <input type="checkbox" name="" hidden class="input-show-menu" id="nav-mobile__checkbox">
+                    <label for="nav-mobile__checkbox" class="transperant-overlay"></label>
+                    <label for="nav-mobile__checkbox">
+                        <i class="header__navbar-item header-navbar__icon fa-solid fa-bars"></i>
+                    </label>
+                    <ul class="navbar-menu__list">
+                        <li class="navbar-menu__item"><a href="" class="navbar-menu__link">Close menu</a></li>
+                        <li class="navbar-menu__item"><a href="#slider" class="navbar-menu__link">Food</a></li>
+                        <li class="navbar-menu__item"><a href="#about" class="navbar-menu__link">About</a></li>
+                    </ul>
                     <span class="header__navbar-item header-navbar__heading">My Food</span>
                     <span class="header__navbar-item header-navbar__mail">Mail</span>
                 </div>
             </div>
         </div>
 
-        <div class="slider">
+        <div id="slider" class="slider">
             <div class="slider-wide grid wide">
                 <div class="row">
                     <div class="col l-3 m-3 c-12">
@@ -119,7 +128,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="about">
+                <div id="about" class="about">
                         <h2 class="about__heading">About Me, The Food Man</h2>
                             <div class="about__img" style="background-image: url(./asset/pics/About/chef.jpg);"></div>
                         <div class="about-me">
@@ -136,7 +145,7 @@
         <div class="footer">
             <div class="grid wide">
                 <div class="footer-content row">
-                    <div class="col l-4 c-12">
+                    <div class="col l-4 m-4 c-12">
                         <div class="footer-container-about">
                             <h2 class="footer-container__heading">FOOTER</h2>
                             <div class="footer-container__paragraph">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</div>
@@ -144,7 +153,7 @@
                         </div>
                     </div>
 
-                    <div class="col l-4 c-12">
+                    <div class="col l-4 m-4 c-12">
                         <div class="footer-container-post">
                             <h2 class="footer-container__heading">POPULAR TAGS</h2>
                             <ul class="footer-container-post__list">
@@ -166,7 +175,7 @@
                         </div>
                     </div>
 
-                    <div class="col l-4 c-12">
+                    <div class="col l-4 m-4 c-12">
                         <div class="footer-container-tags">
                             <h2 class="footer-container__heading">POPULAR TAGS</h2>
                             <p class="footer-container-tags__list">
